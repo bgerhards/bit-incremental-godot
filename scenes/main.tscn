@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwxv2tptw3rh8"]
+
+[ext_resource type="Script" uid="uid://c676k1ft3vjjf" path="res://scripts/main.gd" id="1_o5qli"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Main" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o5qli")
+
+[node name="Center" type="CenterContainer" parent="Main"]
+layout_direction = 2
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UI" type="VBoxContainer" parent="Main/Center"]
+layout_direction = 1
+layout_mode = 2
+
+[node name="BitsLabel" type="Label" parent="Main/Center/UI"]
+layout_mode = 2
+text = "Bits: 0"
+
+[node name="HSeparator" type="HSeparator" parent="Main/Center/UI"]
+layout_mode = 2
+
+[node name="ItemsContainer" type="VBoxContainer" parent="Main/Center/UI"]
+layout_mode = 2

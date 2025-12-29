@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmgvi601kej36"]
+
+[ext_resource type="Script" uid="uid://bgwjs4t3x0me2" path="res://scripts/ItemController.gd" id="1_n11ee"]
+
+[node name="ItemContainer" type="HBoxContainer"]
+script = ExtResource("1_n11ee")
+
+[node name="ItemLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Shamblers"
+
+[node name="ItemRatesLabel" type="Label" parent="."]
+visible = false
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "+0 / sec"
+
+[node name="ItemLevelLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Level 1"
+
+[node name="ItemUnlockButton" type="Button" parent="."]
+layout_mode = 2
+text = "Unlock (Cost: x)"
+
+[node name="ItemUpgradeAutoButton" type="Button" parent="."]
+layout_mode = 2
+text = "Upgrade Auto (Cost: x)"
